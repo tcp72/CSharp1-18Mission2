@@ -41,7 +41,7 @@ namespace CSharp1_18
                 string asterisk = "";
 
                 //Console.Write(whichDie);
-                for (int iCount = 0; iCount < arrayOfTotals[i]; iCount++) //(Math.Round(arrayOfTotals[i]/numRollsNeeded)); iCount++)
+                for (int iCount = 0; iCount < (Math.Round(((float)arrayOfTotals[i]/(float)numRollsNeeded) *100)); iCount++)
                 {                     
                     asterisk = asterisk + "*";     
                 }
@@ -54,7 +54,8 @@ namespace CSharp1_18
     }
 }
 /*
- 
+                 for (int iCount = 0; iCount < arrayOfTotals[i]; iCount++) //(Math.Round(arrayOfTotals[i]/numRollsNeeded)); iCount++)
+
 
             int[] roll1 = new int[6]; //array of integers named roll1; has 6 options; instantiate, starts w/ nulls; 0-5 (so like 1-6)
             int[] roll2 = new int[6];
